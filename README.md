@@ -1,5 +1,8 @@
 # SwitchPresence
 A simple program to display switch games in discord.
+
+**Go to [releases]() to find the download, the other stuff is source code.**
+
 >Made with [Love2D](http://love2d.org)
 
 >Credit to pfirsich for the [Lua Discord Rich Presence Script](https://github.com/pfirsich/lua-discordRPC)
