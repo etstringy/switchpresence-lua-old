@@ -1,7 +1,7 @@
 # SwitchPresence
 A simple program to display switch games in discord.
 
-**Go to [releases]() to find the download, the other stuff is source code.**
+**Go to [releases](https://github.com/etstringy/switchpresence/releases) to find the download, the other stuff is source code.**
 
 >Made with [Love2D](http://love2d.org)
 
