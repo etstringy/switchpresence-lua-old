@@ -41,6 +41,30 @@ function love.load()
 	    smallImageText = "Fortnite",
         details = "Fortnite"
     }
+	mk8d = {
+	    largeImageKey = "ns",
+	    smallImageKey = "mk8d",
+	    smallImageText = "Mario Kart 8 Deluxe",
+        details = "Mario Kart 8 Deluxe"
+    }
+	mc = {
+	    largeImageKey = "ns",
+	    smallImageKey = "mc",
+	    smallImageText = "Minecraft",
+        details = "Minecraft"
+    }
+	botw = {
+	    largeImageKey = "ns",
+	    smallImageKey = "botw",
+	    smallImageText = "The Legend of Zelda: BoTW",
+        details = "The Legend of Zelda: BoTW"
+    }
+	yt = {
+	    largeImageKey = "ns",
+	    smallImageKey = "yt",
+	    smallImageText = "YouTube",
+        details = "YouTube"
+    }
 
 	discordRPC.initialize(appId, true)
 end
@@ -49,7 +73,7 @@ end
 
 function love.draw()
 	gamestr = [[ Playing: ]] .. game 
-	love.graphics.setNewFont("PRESSSTART2P.ttf")
+	love.graphics.setNewFont("PRESSSTART2P.TTF")
 	love.graphics.setColor( 255, 255, 255 )
 	love.graphics.print("SwitchPresence", "50", "50")
 	love.graphics.setColor( 255, 0, 0 )
@@ -59,6 +83,10 @@ function love.draw()
 	love.graphics.print("Press 2 for Smash Ultimate", "50", "150")
 	love.graphics.print("Press 3 for Super Mario Odyssey", "50", "175")
 	love.graphics.print("Press 4 for Fortnite", "50", "200")
+	love.graphics.print("Press 5 for Mario Kart 8 Deluxe", "50", "225")
+	love.graphics.print("Press 6 for Minecraft", "50", "250")
+	love.graphics.print("Press 7 for The Legend of Zelda: Breath of the Wild", "50", "275")
+	love.graphics.print("Press 8 for YouTube", "50", "300")
 	love.graphics.setColor( 0, 255, 0 )
 	love.graphics.print(gamestr, "550", "50")
 end
@@ -82,6 +110,22 @@ function love.update(dt)
 	if love.keyboard.isDown("4") then
 		discordRPC.updatePresence(fortnite)
 		game = "Fortnite"
+	end
+	if love.keyboard.isDown("5") then
+		discordRPC.updatePresence(mk8d)
+		game = "MarioKart"
+	end
+	if love.keyboard.isDown("6") then
+		discordRPC.updatePresence(mc)
+		game = "Minecraft"
+	end
+	if love.keyboard.isDown("7") then
+		discordRPC.updatePresence(botw)
+		game = "Zelda BoTW"
+	end
+	if love.keyboard.isDown("8") then
+		discordRPC.updatePresence(yt)
+		game = "Youtube"
 	end
 end
 
