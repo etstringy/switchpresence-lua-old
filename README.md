@@ -6,12 +6,13 @@ A simple program to display switch games in discord.
 ```
 These are game titles which will trigger custom icons in the presence
 You must type them letter for letter correctly!
-+ Super Smash Bros Ultimate
-+ Fortnite
-+ YouTube
-+ Super Mario Odyssey
-+ Splatoon 2
-+ Undertale
+
+- Super Smash Bros Ultimate
+- Fortnite
+- YouTube
+- Super Mario Odyssey
+- Splatoon 2
+- Undertale
 ```
 
 >Made with [Love2D](http://love2d.org)
